@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily RM/FSE Report - First Bank</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Main Container */
+        .report-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid #002D62; /* First Bank Navy Blue accent */
+        }
+
+        /* Header & Logo Styling */
+        .report-header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 15px;
+        }
+
+        .bank-logo {
+            width: 70px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h1.main-title {
+            color: #002D62;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        /* Section Headings */
+        h2.section-title {
+            font-size: 16px;
+            color: #0066B3;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            border-left: 4px solid #0066B3;
+            padding-left: 10px;
+        }
+
+        /* Form Group / Row Styling */
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full-width {
+            width: 100%;
+        }
+
+        /* Labels */
+        label {
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 5px;
+            color: #4b5563;
+        }
+
+        /* Inputs, Textareas */
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+            background-color: #fff;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #0066B3;
+            box-shadow: 0 0 0 3px rgba(0, 102, 179, 0.15);
+        }
+
+        textarea {
+            resize: vertical;
+            height: 90px;
+        }
+
+        /* Sub-cards */
+        .sub-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Submit Button */
+        .btn-submit {
+            display: block;
+            width: 100%;
+            background-color: #002D62;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-submit:hover {
+            background-color: #001d3d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="report-container">
+        <div class="report-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/First_Bank_of_Nigeria_logo.svg" alt="First Bank Logo" class="bank-logo">
+            <h1 class="main-title">First Bank Kontagora Branch</h1>
+            <h1 class="main-title">Daily RM / FSE Report</h1>
+        </div>
+
+        <!-- REPLACE YOUR_EMAIL_HERE WITH YOUR ACTUAL EMAIL ADDRESS -->
+        <form action="https://formsubmit.co/hrahym9ja@gmail.com" method="POST">
+            
+            <!-- Hidden configuration fields -->
+            <input type="hidden" name="_subject" value="New Daily RM/FSE Report Submitted!">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="Staff Name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="staff-id">Staff ID:</label>
+                    <input type="text" id="staff-id" name="Staff ID" placeholder="Enter Staff ID" required>
+                </div>
+            </div>
+            
+            <h2 class="section-title">CASA: Major Fresh Inflow</h2>
+            <div class="form-group full-width">
+                <label for="casa-details">Details / Inflow Description:</label>
+                <textarea id="casa-details" name="CASA Details" placeholder="Enter CASA inflow details..."></textarea>
+            </div>
+            
+            <h2 class="section-title">LAD</h2>
+            <div class="form-group full-width">
+                <label for="lad-details">LAD Report:</label>
+                <textarea id="lad-details" name="LAD Report" placeholder="Enter LAD details..."></textarea>
+            </div>
+            
+            <h2 class="section-title">Major Visitation & Outcomes</h2>
+            <div class="sub-card">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cust-name">Name of Customer</label>
+                        <input type="text" id="cust-name" name="Customer Name" placeholder="Customer Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="cust-acc">Account No.</label>
+                        <input type="text" id="cust-acc" name="Customer Account No" placeholder="Account Number">
+                    </div>
+                </div>
+                <div class="form-group full-width" style="margin-top: 10px;">
+                    <label for="cust-disc">Discussion / Outcome</label>
+                    <textarea id="cust-disc" name="Customer Discussion" placeholder="Summary of discussion..."></textarea>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Recovery</h2>
+            <div class="sub-card">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="rec-acc">Account Details</label>
+                        <input type="text" id="rec-acc" name="Recovery Account Details" placeholder="Account Name / Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="rec-amount">Amount Recovered</label>
+                        <input type="text" id="rec-amount" name="Recovery Amount" placeholder="e.g. ₦500,000">
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Agent Visitation</h2>
+            <div class="sub-card">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="agent-name">Agent Name</label>
+                        <input type="text" id="agent-name" name="Agent Name" placeholder="Agent Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="agent-acc">Account Details</label>
+                        <input type="text" id="agent-acc" name="Agent Account Details" placeholder="Account details">
+                    </div>
+                </div>
+                <div class="form-row" style="margin-top: 10px;">
+                    <div class="form-group">
+                        <label for="agent-status">Status</label>
+                        <input type="text" id="agent-status" name="Agent Status" placeholder="e.g. Active / Pending">
+                    </div>
+                    <div class="form-group">
+                        <label for="agent-loc">Location</label>
+                        <input type="text" id="agent-loc" name="Agent Location" placeholder="Location">
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Merchant Visitation</h2>
+            <div class="sub-card">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="merch-name">Merchant Name</label>
+                        <input type="text" id="merch-name" name="Merchant Name" placeholder="Merchant Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="merch-acc">Account Details</label>
+                        <input type="text" id="merch-acc" name="Merchant Account Details" placeholder="Account details">
+            </div>
+                </div>
+                <div class="form-row" style="margin-top: 10px;">
+                    <div class="form-group">
+                        <label for="merch-status">Status</label>
+                        <input type="text" id="merch-status" name="Merchant Status" placeholder="e.g. Active / Pending">
+                    </div>
+                    <div class="form-group">
+                        <label for="merch-loc">Location</label>
+                        <input type="text" id="merch-loc" name="Merchant Location" placeholder="Location">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Report</button>
+        </form>
+    </div>
+</body>
+</html>
